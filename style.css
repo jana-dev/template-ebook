@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: #0A2540;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content img {
+    width: 200px;
+    height: auto;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3B82F6;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5f9af9;
+}
+
+/* Sessões gerais */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Estilização da lista */
+.conteudo-lista {
+    list-style: none; /* Remove os bullets padrão */
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.conteudo-lista li {
+    display: flex; /* Flexbox para alinhar o ícone e texto */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+
+.conteudo-lista li:hover{
+    background-color: #dce9ff;
+}
+
+.conteudo-lista li::before {
+    content: '✔'; /* Ícone */
+    color: #4CAF50; /* Cor do ícone */
+    font-weight: bold;
+    display: inline-block;
+    width: 20px; /* Define uma largura fixa para o ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    flex-shrink: 0; /* Impede que o ícone reduza de tamanho */
+}
+
+/* Sessão de bônus */
+.bonus-image {
+    width: 200px;
+}
+
+.bonus{
+    background-color: #CBD5E1;
+}
+
+/* Sessão de depoimentos */
+.depoimentos .depoimento {
+    display: flex;
+    justify-content: flex-start; /* Alinhamento padrão para a esquerda */
+    margin-bottom: 20px;
+}
+
+.depoimentos .depoimento:nth-child(even) {
+    justify-content: flex-end; /* Alinhamento para a direita nos elementos pares */
+}
+
+.img-depo {
+    max-width: 600px;
+    border-radius: 10px;
+    width: 100%; /* Para garantir que a imagem respeite o container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Preço */
+.preco {
+    background-color: #f2f7fc;
+    border: 2px solid #3B82F6;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.preco-antigo {
+    font-size: 1.2rem; /* Tamanho menor */
+    color: #777; /* Cinza claro */
+    text-decoration: line-through; /* Riscado */
+    display: block; /* Quebra a linha */
+    margin-bottom: 5px; /* Espaçamento entre os preços */
+}
+
+.preco-atual {
+    font-size: 2.5rem; /* Maior destaque */
+    color: #059669; /* Cor de destaque (laranja forte) */
+    font-weight: bold;
+}
+
+.garantia {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
